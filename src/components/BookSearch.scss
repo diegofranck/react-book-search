@@ -1,0 +1,38 @@
+$emperor: #4F4F4F;
+$alto: #E0E0E0;
+$white: #FFFFFF;
+
+.search {
+  display: grid;
+  row-gap: 20px;
+}
+
+.inputs {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 16px;
+  
+  & > label {
+    display: grid;
+    column-gap: 8px;
+    
+    & > span {
+      color: $emperor;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    & > input {
+      background: $white;
+      border: 1px solid $alto;     
+      border-radius: 4px;
+      font-size: 14px;
+      color: $emperor;
+      padding: 12px;
+    }
+  }
+}
